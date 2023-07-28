@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy jako CrazyWolf</title>
+    <link rel="icon" type="image/x-icon" href="wolf.png">
+</head>
+<body style="background-image:url(gif.gif);" >
+    <style>
+        .blink {
+            animation: blinker 2.1s linear infinite;
+            color: red;
+            font-weight: bold;
+            background-color:cornflowerblue;
+            }
+        .blink2 {
+            animation: blinker 1.1s linear infinite;
+            color: red;
+            font-weight: bold;
+            background-color:cornflowerblue;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        @keyframes blinker2 {
+            50% {
+                opacity: 0;
+            }
+        }
+        footer{
+            background: volet;
+        }
+    </style>
+
+
+    <marquee scrollamount="10" width="200" behavior="alternate">Hello world!</marquee>
+    <br>
+    <marquee scrollamount="10" width="200" loop="3" behavior="scroll">1111111 2222222 333333 44444 5555555555</marquee>
+    <br>
+    <marquee scrollamount="10" width="200" loop="3" bgcolor="lightblue" behavior="slide">11111 2222222222 333333333 44444444 55555</marquee>
+    <br>
+    <marquee scrollamount="10" width="200" direction="up" height="50">Hello world!</marquee>
+    <br>
+    <blink class="blink"> Here is your text that has to blink. </blink>
+    <img src="image.jpg"  class="blink" height="100">
+    <br>
+    <img src="eye.jpg" height="50">
+    <img class="blink2" src="eye.jpg" height="50">
+    <br>
+    <a href="https://seznam.cz" target="_blank"> Ahoj</a>
+    <br>
+    select: <select>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+    </select>
+    <br>
+    <input type="range">
+    <br><br>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            </ol>
+        </ol>
+        
+        <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            </ul>
+        </ul>
+    <br><br>
+    <textarea maxlength="500" ></textarea>
+    <footer background="violet">LOOK AT THIS WEB: 
+        <a href="http://mata.chytrak.cz/" target=”_blank”>mata.chytrak.cz</a>
+    </footer>
+</body>
+</html>
