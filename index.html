@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crazy jako CrazyWolf</title>
     <link rel="icon" type="image/x-icon" href="images/wolf.png">
     <link rel="stylesheet" href="style.css">
+    <title>Crazy jako CrazyWolf</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+   
 </head>
-<body style="background-image:url(images/gif.gif);" >
+<body style="background-image:url(images/gif2.gif);" >
 
-    <header>
-        <a href="index.html"> <img src="images/wolf.png" height="100"></a>
-        <a class="h1" href="index.html">Crazy Jako CrazyWolf</a>
-        <a class="navtext" href="second.html">SecondPage</a>
-    </header>
+    <header id="header"></header>
 
     <marquee scrollamount="10" width="200" behavior="alternate">Hello world!</marquee>
     <br>
@@ -68,5 +66,16 @@
 
     <br><br>
     <textarea maxlength="50" ></textarea>
+
+<script>
+    $(function () {
+    $('#header').load('header.html', function () {
+        const navbarLink = document.querySelectorAll("#header .navtext")[0]
+        console.log(navbarLink);
+        navbarLink.classList.add("now")
+    });
+});
+</script>
 </body>
+
 </html>

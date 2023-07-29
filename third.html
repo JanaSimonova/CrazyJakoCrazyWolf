@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/wolf.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Crazy jako... [2]</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+</head>
+<body class="blinkbackground">
+
+<header id="header"></header>
+    
+
+
+<script>
+    $(function () {
+    $('#header').load('header.html', function () {
+        const navbarLink = document.querySelectorAll("#header .navtext")[2]
+        console.log(navbarLink);
+        navbarLink.classList.add("now")
+    });
+});
+</script>
+</body>
+</html>

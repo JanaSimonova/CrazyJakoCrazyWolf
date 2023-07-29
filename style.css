@@ -3,7 +3,7 @@
     color: red;
     font-weight: bold;
     background-color:cornflowerblue;
-    }
+}
 .blink2 {
     animation: blinker 1.1s linear infinite;
     color: red;
@@ -21,34 +21,76 @@
     }
 }
 
+/* --- THINGS --- */
+
+body{
+    margin:0;
+    padding: 5px;
+}
+
 header{
     background-color: aqua;
     display:flex ;
     color: yellow;
     align-items: center;
-    
 }
 header:hover{
     background-color:yellow ;
     color: aqua;
 }
-.h1{
-    padding: 10px;
-    font-family:'Franklin Gothic Medium' ;
-    text-decoration: none;
-    font-size: xx-large;
-    color: inherit;
-}
 
-li:hover{
-    background-color: cyan;
-}
 .navtext{
     font-size: xx-large;
-    padding-left: 20px;
+    padding: 20px;
     text-decoration: none;
     font-family: Impact;
+    color: inherit;
 }
-.navtext:visited{
-    color: inherit 
+.now{
+    color:cornflowerblue;
+    font-family: 'Comic Sans MS'
+}
+
+.vertical {
+    border-left: 2px solid black;
+    height: 80px;
+}
+table, td {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+
+/* --- PAGE 2 --- */
+
+.blinkbackground{
+    animation: blink-background 2s linear infinite;
+}
+@keyframes blink-background{
+    0% {
+        background-color: #ff0000;
+    }
+    16% {
+        background-color: #ffc400;
+    }
+    32%{
+        background-color: #fffb00;
+    }
+    48%{
+        background-color: #00ff0d;
+    }
+    64%{
+        background-color: #00ffff;
+    }
+    80%{
+        background-color: #001aff;
+    }
+    100% {
+        background-color: #d400ff;
+    }
+}
+
+.banana{
+    margin: 10px;
+    background-color: #fbff00;
 }
